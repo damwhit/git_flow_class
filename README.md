@@ -3,8 +3,6 @@
 # Before we start
 *Does anyone have any particularly horrible git-tastrophes that they'd like to share?
 
-*Show of thumbs... How does everyone feel about git work flow?
-
 *Any burning questions?
 
 * Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency(LOCAL)
