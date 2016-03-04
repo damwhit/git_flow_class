@@ -7,6 +7,11 @@
 
 *Any burning questions?
 
+* Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency(LOCAL)
+
+* GitHub is a web-based Git repository hosting service.
+
+
 *[Setting your OSX Keychain](https://help.github.com/articles/caching-your-github-password-in-git/)
 
 *[Setting up autocomplete for git commands](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
