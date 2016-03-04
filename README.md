@@ -36,9 +36,14 @@
 16. git checkout master, git pull origin master, and repeat the process
 
 ## Other very common commands I use
+
+*git add -p 'filename'
+
 *git init and hub create
 
 *git stash
+
+*git stash pop
 
 *git status
 
@@ -47,6 +52,14 @@
 *hub browse
 
 *fuzzy finder
+
+*git fetch
+
+*git log
+
+*git remote -v
+
+*git remote add "name" "url"
 
 ## Git Workflow, according to GitHub
 
@@ -145,3 +158,30 @@ Person 1 Adds a line!
  
 1. Person 1: Merge the PR and close the issue via your commit message.
   [halp?](https://help.github.com/articles/closing-issues-via-commit-messages/)
+
+#Other Git Commands
+  
+##git stash
+
+* git stash is used to save the state of your working directory as well as your index directory.  
+* It also reverts you back to a clean directory at your HEAD commit.
+
+##git stash apply
+* git stash apply allows you to revert to a previous stash by either specicfying ie. git stash apply stash@{2}, which will take you back to the specified stash.  
+* Or, simply typing git stash apply will revert to your most recent stash.
+
+##git shortlog
+* ths outputs a summary of the log read from standard input, without reference to the current repository.  Lists all commits by all authors in individualized lists
+
+##git commit --amend
+* --amend allows you to combine staged changes with the previous instead of committing it as an entirely new snapshot.
+
+##git reset --hard
+* This resets the index and the working tree.  Any changes to tracked files since the last commit are discarded.
+
+##git reset --soft
+* This does not touch the index or working tree but resets the head to the latest commit and leaves all files unstaged.
+
+##for rebasing
+* `git config --global core.editor "atom —wait"`
+
