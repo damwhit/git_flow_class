@@ -187,6 +187,10 @@ Person 1 Adds a line!
 ##git reset --soft
 * This does not touch the index or working tree but resets the head to the latest commit and leaves all files unstaged.
 
+#Don't worry about these until you get to rails:
+*[Rails git flow](https://gist.github.com/erinnachen/1f802734671d9db5c452)
+
 ##for rebasing
 * `git config --global core.editor "atom —wait"`
+* This allows you to rebase commits in atom.
 
