@@ -1,26 +1,26 @@
-# git_flow_class
+# git Flow Class
 
-# Before we start
-*Does anyone have any particularly horrible git-tastrophes that they'd like to share?
+### Before we start
+* Does anyone have any particularly horrible git-tastrophes that they'd like to share?
 
-*Any burning questions?
+* Any burning questions?
 
 * Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency(LOCAL)
 
 * GitHub is a web-based Git repository hosting service.
 
 
-*[Setting your OSX Keychain](https://help.github.com/articles/caching-your-github-password-in-git/)
+* [Setting your OSX Keychain](https://help.github.com/articles/caching-your-github-password-in-git/)
 
-*[Setting up autocomplete for git commands](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
+* [Setting up autocomplete for git commands](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
 
-*[Setting up hub](https://github.com/github/hub)
+* [Setting up hub](https://github.com/github/hub)
 
 * `alias bash='atom ~/.bash_profile'`
 
 * Use picture of git flow with orange writing
 
-#Git Flow
+## Git Flow
 1. Git checkout -b "branch_name"
 2. do work
 3. Commit (add, commit)
@@ -40,29 +40,27 @@
 
 ## Other very common commands I use
 
-*git add -p 'filename'
+* `git add -p 'filename'`
 
-*git init and hub create
+* `git init and hub create`
 
-*git stash
+* `git stash`
 
-*git stash pop
+* `git stash pop`
 
-*git status
+* `git status`
 
-*git diff
+* `git diff`
 
-*hub browse
+* `hub browse`
 
-*fuzzy finder
+* `git fetch`
 
-*git fetch
+* `git log`
 
-*git log
+* `git remote -v`
 
-*git remote -v
-
-*git remote add "name" "url"
+* `git remote add "name" "url"`
 
 ## Git Workflow, according to GitHub
 
@@ -162,33 +160,28 @@ Person 1 Adds a line!
 1. Person 1: Merge the PR and close the issue via your commit message.
   [halp?](https://help.github.com/articles/closing-issues-via-commit-messages/)
 
-#Other Git Commands
+## Other Git Commands
   
-##git stash
+* git stash
+  * git stash is used to save the state of your working directory as well as your index directory.  
+  * It also reverts you back to a clean directory at your HEAD commit.
 
-* git stash is used to save the state of your working directory as well as your index directory.  
-* It also reverts you back to a clean directory at your HEAD commit.
+* git stash apply
+  * git stash apply allows you to revert to a previous stash by either specicfying ie. git stash apply stash@{2}, which will take you back to the specified stash.  
+  * Or, simply typing git stash apply will revert to your most recent stash.
 
-##git stash apply
-* git stash apply allows you to revert to a previous stash by either specicfying ie. git stash apply stash@{2}, which will take you back to the specified stash.  
-* Or, simply typing git stash apply will revert to your most recent stash.
+* git shortlog
+  * ths outputs a summary of the log read from standard input, without reference to the current repository.  Lists all commits by all authors in individualized lists
 
-##git shortlog
-* ths outputs a summary of the log read from standard input, without reference to the current repository.  Lists all commits by all authors in individualized lists
+* git commit --amend
+  * --amend allows you to combine staged changes with the previous instead of committing it as an entirely new snapshot.
 
-##git commit --amend
-* --amend allows you to combine staged changes with the previous instead of committing it as an entirely new snapshot.
+* git reset --hard
+  * This resets the index and the working tree.  Any changes to tracked files since the last commit are discarded.
 
-##git reset --hard
-* This resets the index and the working tree.  Any changes to tracked files since the last commit are discarded.
+* git reset --soft
+  * This does not touch the index or working tree but resets the head to the latest commit and leaves all files unstaged.
 
-##git reset --soft
-* This does not touch the index or working tree but resets the head to the latest commit and leaves all files unstaged.
-
-#Don't worry about these until you get to rails:
-*[Rails git flow](https://gist.github.com/erinnachen/1f802734671d9db5c452)
-
-##for rebasing
-* `git config --global core.editor "atom —wait"`
-* This allows you to rebase commits in atom.
+* Setting your git config to use a certain text editor
+  * `git config --global core.editor "sublime —wait"`
 
