@@ -9,38 +9,33 @@
 
 * GitHub is a web-based Git repository hosting service.
 
-
 * [Setting your OSX Keychain](https://help.github.com/articles/caching-your-github-password-in-git/)
 
 * [Setting up autocomplete for git commands](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
 
 * [Setting up hub](https://github.com/github/hub)
 
-* `alias bash='atom ~/.bash_profile'`
-
-* Use picture of git flow with orange writing
+* `alias bash='sublime ~/.bash_profile'`
 
 ## Git Flow
-1. Git checkout -b "branch_name"
+1. git checkout -b <branch_name> (this creates a new branch and checks out to that same branch)
 2. do work
-3. Commit (add, commit)
+3. commit (add, commit)
 4. git checkout master
 5. git pull origin master
-6. git checkout branch_name
+6. git checkout <branch_name>
 7. git merge master
-8. fix problems! (tells you on command line where to look in editor)
-9. run tests
-10. git push origin name
+8. fix conflicts! (tells you on command line where to look in editor)
+9. run tests if applicable
+10. git push origin <branch_name>
 11. go to GitHub! (hub browse)
 12. create a pull request(make sure its going to the right place)
-13. hit 'submit pull request'
+13. hit the 'submit pull request' button
 14. contact partner to review pull request
 15. partner merges pull request
 16. git checkout master, git pull origin master, and repeat the process
 
 ## Other very common commands I use
-
-* `git add -p 'filename'`
 
 * `git init and hub create`
 
@@ -98,9 +93,7 @@ In pairs assign one person the role of `Person 1` and the other `Person 2`.
 
 1. Person 1: Create a repo on Github with a README. Add Person 2 as a Collaborator.
 
-1. Person 1: Add the project to waffle.io
-
-1. Person 1: Add 2 issues to your waffleboard, one for Person 1, the other for Person 2.
+1. Extra Challenge(optional): Add 2 issues to your github issues, one for Person 1, the other for Person 2.
 
 1. Both: checkout a unique branch.
 
@@ -114,8 +107,9 @@ In pairs assign one person the role of `Person 1` and the other `Person 2`.
 
 1. Person 1: Push your branch and open a PR.
 
-1. Person 2: Merge the PR and close the issue assigned to Person 1 via a commit message.
-  [halp?](https://help.github.com/articles/closing-issues-via-commit-messages/)
+1. Person 2: Merge the PR 
+  * If doing the extra challenge: close the issue assigned to Person 1 via a commit message.
+  * [halp?](https://help.github.com/articles/closing-issues-via-commit-messages/)
 
 1. Person 2: Push your branch and open a PR.
   * Notice that we can’t merge it automatically
@@ -129,7 +123,7 @@ In pairs assign one person the role of `Person 1` and the other `Person 2`.
 
 1. Person 2: Merge master into your current branch.
   * This should throw an error
-  CONFLICT (content): Merge conflict in sample.txt
+  CONFLICT (content): Merge conflict in readme.md
    Automatic merge failed; fix conflicts and then commit the result.
 
 1. Person 2: Open the file it says the conflict occurs in. You can see it if you run git status
@@ -143,7 +137,7 @@ Person 2 adds a line!
 Person 1 Adds a line!
 >>>>>>> master
 ```
-1. Person 2: Update the line to look the way you want it to look.
+1. Person 2: Update the line to look the way you want it to look
   * Remove the `<<<< HEAD`, `=======`, and `>>>> master` lines
 
 1. Person 2: running git status tells you how to mark the conflict as resolved
@@ -151,13 +145,12 @@ Person 1 Adds a line!
 
 1. Person 2: Commit the resolved changes
 
-1. Person 2: Push the changes to your branch on Github.
+1. Person 2: Push the changes to your branch on Github
 
 1. Reload the pull request
-  * It should now be able to be merged in automatically.
+  * It should now be able to be merged in automatically
   * You should also see the commit that merged the two changes
- 
-1. Person 1: Merge the PR and close the issue via your commit message.
+  * If doing the extra challenge: Person 1: Merge the PR and close the issue via your commit message.
   [halp?](https://help.github.com/articles/closing-issues-via-commit-messages/)
 
 ## Other Git Commands
