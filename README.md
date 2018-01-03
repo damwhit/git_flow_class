@@ -7,11 +7,11 @@
 
 * [Setting your OSX Keychain](https://help.github.com/articles/caching-your-github-password-in-git/)
 
+* `alias bash='sublime ~/.bash_profile'`
+
 * [Setting up autocomplete for git commands](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
 
 * [Setting up hub](https://github.com/github/hub)
-
-* `alias bash='sublime ~/.bash_profile'`
 
 ## Git Flow
 1. git checkout -b <branch_name> (this creates a new branch and checks out to that same branch)
@@ -31,27 +31,45 @@
 15. partner merges pull request
 16. git checkout master, git pull origin master, and repeat the process
 
-## Other very common commands I use
+## Some more useful commands
 
 * `git init and hub create`
-
-* `git stash`
-
-* `git stash pop`
-
-* `git status`
+  * create local git repo and remote repo
 
 * `git diff`
-
+  * shows all of the additions and deletions in your working directory
+  
 * `hub browse`
-
-* `git fetch`
-
-* `git log`
+  * takes you to the repo in github
 
 * `git remote -v`
+  * check all remotes associated with local repo
 
-* `git remote add "name" "url"`
+* `git remote add <name(ie. origin or upstream)> <url>`
+  * add another remote repo to your local repository
+  
+* `git stash`
+  * saves the state of your working directory.  
+  * It also reverts you back to a clean directory at your HEAD commit.
+
+* `git stash pop`
+  * gives you back changes from your last stash
+  
+* `git stash apply`
+  * allows you to revert to a previous stash by either specicfying ie. git stash apply stash@{2}, which will take you back to the specified stash.  
+  * Or, simply typing git stash apply will revert to your most recent stash.
+
+* `git commit --amend`
+  * --amend allows you to combine staged changes with the previous instead of committing it as an entirely new snapshot.
+
+* `git reset --hard`
+  * This resets the index and the working tree.  Any changes to tracked files since the last commit are discarded.
+
+* `git reset`
+  * This does not touch the index or working tree but resets the head to the latest commit and leaves all files unstaged.
+
+* Setting your git config to use a certain text editor
+  * `git config --global core.editor "sublime —wait"`
 
 ## Git Workflow, according to GitHub
 
@@ -95,9 +113,9 @@ In pairs assign one person the role of `Person 1` and the other `Person 2`.
 
   Example:
   
-  `git checkout -b person_1_changes_stuff`
+  `git checkout -b person1-update-readme`
   
-  `git checkout -b person_2_changes_things`
+  `git checkout -b person2-update-readme`
 
 1. Both: Make changes to the same line in the README in both repos.
 
@@ -148,29 +166,4 @@ Person 1 Adds a line!
   * You should also see the commit that merged the two changes
   * If doing the extra challenge: Person 1: Merge the PR and close the issue via your commit message.
   [halp?](https://help.github.com/articles/closing-issues-via-commit-messages/)
-
-## Other Git Commands
-  
-* git stash
-  * git stash is used to save the state of your working directory as well as your index directory.  
-  * It also reverts you back to a clean directory at your HEAD commit.
-
-* git stash apply
-  * git stash apply allows you to revert to a previous stash by either specicfying ie. git stash apply stash@{2}, which will take you back to the specified stash.  
-  * Or, simply typing git stash apply will revert to your most recent stash.
-
-* git shortlog
-  * ths outputs a summary of the log read from standard input, without reference to the current repository.  Lists all commits by all authors in individualized lists
-
-* git commit --amend
-  * --amend allows you to combine staged changes with the previous instead of committing it as an entirely new snapshot.
-
-* git reset --hard
-  * This resets the index and the working tree.  Any changes to tracked files since the last commit are discarded.
-
-* git reset --soft
-  * This does not touch the index or working tree but resets the head to the latest commit and leaves all files unstaged.
-
-* Setting your git config to use a certain text editor
-  * `git config --global core.editor "sublime —wait"`
-
+  * If not: Person 1: Just merge the PR
