@@ -7,10 +7,9 @@
 
 * [Setting your OSX Keychain](https://help.github.com/articles/caching-your-github-password-in-git/)
 
-* `alias bash='sublime ~/.bash_profile'`
-
 * [Setting up autocomplete for git commands](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
-
+  * `alias bash='sublime ~/.bash_profile'`
+  
 * [Setting up hub](https://github.com/github/hub)
 
 ## Git Flow
@@ -35,12 +34,12 @@
 
 * `git init and hub create`
   * create local git repo and remote repo
-
-* `git diff`
-  * shows all of the additions and deletions in your working directory
   
 * `hub browse`
   * takes you to the repo in github
+
+* `git diff`
+  * shows all of the additions and deletions in your working directory
 
 * `git remote -v`
   * check all remotes associated with local repo
@@ -84,7 +83,7 @@ Below is GitHub's workflow. Most teams will do something similar. Step 6 can var
 5. After someone else has reviewed and signed off on the feature, you can merge it into master
 6. Once it is merged and pushed to ‘master’, you can and should deploy immediately
 
-It's useful to think of branches like Ruby methods: they should be small, have descriptive names and implement a single feature. Use branches for the small features that you can implement quickly.
+It's useful to think of branches like JavaScript functions: they should be small, have descriptive names and implement a single feature. Use branches for the small features that you can implement quickly.
 
 When your feature is complete, don't just merge it into master—submit a pull request and let someone from your team review your code.
 
