@@ -6,9 +6,6 @@
 * Any burning questions?
 
 * [Setting your OSX Keychain](https://help.github.com/articles/caching-your-github-password-in-git/)
-
-* [Setting up autocomplete for git commands](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
-  * `alias bash='sublime ~/.bash_profile'`
   
 ## Git Flow
 1. git checkout -b <branch_name> (this creates a new branch and checks out to that same branch)
